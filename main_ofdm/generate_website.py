@@ -600,15 +600,14 @@ def generate_interactive_html(df, stats_df, output_dir):
 
         <div class="tabs">
             <button class="tab-button active" onclick="openTab(event, 'overview-tab')">🏠 Overview</button>
-            <button class="tab-button" onclick="openTab(event, 'timeseries-tab')">📈 Time Series</button>
             <button class="tab-button" onclick="openTab(event, 'analysis-tab')">🔍 Analysis</button>
             <button class="tab-button" onclick="openTab(event, 'insights-tab')">💡 Insights</button>
         </div>
 
         <div id="overview-tab" class="tab-content active">
-            <h2 class="section-title">🎯 3D Visualization</h2>
+            <h2 class="section-title">🎯 Visualization</h2>
             <div class="chart-container" style="text-align:center;">
-                <img src="humidity_vs_rsl.png" alt="3D Visualization: Temperature, Humidity & Signal Strength" style="max-width:100%;height:auto;border-radius:8px;">
+                <img src="humidity_vs_rsl.png" alt="Visualization: Temperature, Humidity & Signal Strength" style="max-width:100%;height:auto;border-radius:8px;">
             </div>
             <h2 class="section-title">🔗 Correlation Analysis</h2>
             <div class="chart-container" style="text-align:center;">
@@ -616,10 +615,7 @@ def generate_interactive_html(df, stats_df, output_dir):
             </div>
         </div>
 
-        <div id="timeseries-tab" class="tab-content">
-            <h2 class="section-title">📈 Time Series Analysis</h2>
-            <div class="chart-container"><div id="chart-timeseries" style="width:100%;height:1400px;"></div></div>
-        </div>
+
 
         <div id="analysis-tab" class="tab-content">
             <h2 class="section-title">📊 Link Reciprocity Analysis</h2>
